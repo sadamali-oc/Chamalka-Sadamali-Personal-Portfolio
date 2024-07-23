@@ -64,11 +64,13 @@ section {
 }
 
 .navbar a:hover {
-    color: var(--main-color); /* Change color on hover */
+    color: var(--main-color);
+    /* Change color on hover */
 }
 
 .navbar a:active {
-    color: var(--text-color); /* Change color when the link is active (clicked) */
+    color: var(--text-color);
+    /* Change color when the link is active (clicked) */
 }
 
 #menu-icon {
@@ -202,11 +204,11 @@ span {
 }
 
 
-.services h2{
+.services h2 {
     margin-bottom: 5rem;
 }
 
-.services-container{
+.services-container {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -216,8 +218,8 @@ span {
 }
 
 
-.services-container .services-box{
-    flex:  1 1 30rem;
+.services-container .services-box {
+    flex: 1 1 30rem;
     background: var(--snd-bf-color);
     padding: 3rem 2rem 4rem;
     border-radius: 2rem;
@@ -227,25 +229,25 @@ span {
 }
 
 
-.services-container .services-box:hover{
-    border-color:  var(--main-color);
+.services-container .services-box:hover {
+    border-color: var(--main-color);
     transform: scale(1.02);
 }
 
 
-.services-box i{
+.services-box i {
     font-size: 7rem;
     color: var(--main-color);
 }
 
-.services-box h3{
+.services-box h3 {
     font-size: 2.6rem;
 }
 
 
-.services-box p{
-    font-size:1rem ;
-    margin:  1rem 0 2rem;
+.services-box p {
+    font-size: 1rem;
+    margin: 1rem 0 2rem;
 }
 
 .portfolio {
@@ -260,7 +262,8 @@ span {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 2.5rem;
-    align-items: start; /* Align items at the start to ensure they start from the same vertical point */
+    align-items: start;
+    /* Align items at the start to ensure they start from the same vertical point */
 }
 
 .portfolio-container .portfolio-box {
@@ -269,13 +272,16 @@ span {
     box-shadow: 0 0 1rem var(--bg-color);
     overflow: hidden;
     display: flex;
-    flex-direction: column; /* Ensure content is stacked vertically */
+    flex-direction: column;
+    /* Ensure content is stacked vertically */
 }
 
 .portfolio-box img {
     width: 100%;
-    height: 200px; /* Set a fixed height */
-    object-fit: cover; /* Ensure the image covers the container, maintaining aspect ratio */
+    height: 200px;
+    /* Set a fixed height */
+    object-fit: cover;
+    /* Ensure the image covers the container, maintaining aspect ratio */
     transition: .5s ease;
     opacity: 0.7;
 }
@@ -319,7 +325,8 @@ span {
     justify-content: center;
     align-items: center;
     width: 5rem;
-    height: 5rem; /* Ensure the link is a perfect circle */
+    height: 5rem;
+    /* Ensure the link is a perfect circle */
     background: var(--text-color);
     border-radius: 50%;
 }
@@ -330,16 +337,16 @@ span {
 }
 
 
-.contact{
+.contact {
     margin-bottom: 3rem;
 }
 
-.contact h2{
+.contact h2 {
     margin-bottom: 3rem;
 }
 
 
-.contact form{
+.contact form {
     max-width: 70rem;
     margin: 3rem auto;
     text-align: center;
@@ -348,7 +355,7 @@ span {
 }
 
 
-.contact form .input-box{
+.contact form .input-box {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -356,7 +363,7 @@ span {
 
 
 .contact form .input-box input,
-.contact form textarea{
+.contact form textarea {
     width: 100%;
     padding: 1.5rem;
     font-size: 1.6rem;
@@ -367,16 +374,230 @@ span {
 }
 
 
-.contact form .input-box input{
+.contact form .input-box input {
     width: 49%;
 }
 
-.contact form textarea{
+.contact form textarea {
     resize: none;
 }
 
 
-.contact form .btn{
+.contact form .btn {
     margin-top: 2rem;
     cursor: pointer;
+}
+
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 2rem 9%;
+    background: var(--snd-bf-color);
+}
+
+
+.footer-text {
+    font-size: 1.6rem;
+}
+
+
+.footer-iconTop {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: -8rem 1rem;
+    background: var(--main-color);
+    border-radius: .8rem;
+    transition: .5s ease;
+}
+
+
+.footer-iconTop a:hover {
+    box-shadow: 0 0 1rem var(--main-color);
+}
+
+
+.footer-iconTop a i {
+    font-size: 2.4rem;
+    color: var(--snd-bf-color);
+}
+
+/*BREAKPOINT*/
+
+@media (max-width:1200px) {
+
+    html {
+        font-size: 55%;
+    }
+}
+
+
+
+@media (max-width:991px) {
+
+    .header {
+        padding: 2rem 3%;
+    }
+
+
+    section {
+        padding: 10rem 3%;
+    }
+
+
+    .services {
+        padding: 7rem;
+    }
+
+
+    .portfolio {
+        padding-bottom: 7rem;
+    }
+
+
+    .contact {
+        min-height: auto;
+    }
+
+
+
+    .footer {
+        padding: 2rem 3%;
+    }
+}
+
+
+
+@media(max-width:768px) {
+    #menu-icon {
+
+        display: block;
+    }
+
+
+    .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        padding: 1rem 3%;
+        background: var(--bg-color);
+        border-top: -1rem solid rgba(0, 0, 0, .2);
+        box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .2);
+        display: none;
+        transition: transform 0.3s ease-in-out; /* Example transition */
+        transform: translateY(-100%);
+    }
+    
+    .navbar.active {
+        display: block;
+        transform: translateY(0);
+    }
+    
+
+    .navbar a {
+        display: block;
+        font-size: 2rem;
+        margin: 3rem 0;
+
+    }
+
+
+    
+
+
+
+
+
+    .home {
+        flex-direction: column;
+    }
+
+
+    .home-content h3 {
+        font-size: 2.6rem;
+    }
+
+
+    .home-content h1 {
+        font-size: 5rem;
+    }
+
+
+    .home-content {
+        order: 2;
+    }
+
+
+    .home-img img {
+        width: 70vw;
+        margin-top: 4rem;
+    }
+
+
+    .about {
+        flex-direction: column;
+    }
+
+
+    .about-img img {
+        width: 90vw;
+        margin-top: 4rem;
+    }
+
+
+    .services h2 {
+        margin-bottom: 3rem;
+    }
+
+
+
+
+    .portfolio h2 {
+        margin-bottom: 3rem;
+
+    }
+
+
+    .portfolio-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+@media(max-width:617px) {
+    .portfolio-container {
+        grid-template-columns: 1fr;
+    }
+
+
+    .home-img img {
+        width: 80vw;
+        margin-top: 8rem;
+    }
+
+
+
+    .about-img img {
+        width: 100vw;
+        margin-top: 4rem;
+    }
+
+}
+
+
+
+@media(max-width:450px) {
+    html {
+        font-size: 50%;
+    }
+
+
+    .contact form .input-box input {
+        width: 100%;
+    }
 }
