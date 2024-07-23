@@ -36,6 +36,26 @@ section {
     padding: 10rem 9% 2rem;
 }
 
+/* Ensure the link has no unwanted styles */
+.link-icon {
+    display: inline-block; /* Make sure it displays inline with other elements */
+    text-decoration: none; /* Remove underline */
+    background: none; /* Remove background */
+    border: none; /* Remove border */
+    padding: 0; /* Remove padding */
+    margin: 0; /* Remove margin */
+  }
+  
+  /* Style the icon itself */
+  .link-icon i {
+    font-size: 1.5rem; /* Adjust size as needed */
+    color: #000; /* Set icon color */
+    background: none; /* Ensure no background for the icon */
+    border: none; /* Ensure no border for the icon */
+  }
+  
+
+
 .header {
     position: fixed;
     top: 0;
@@ -488,15 +508,16 @@ span {
         border-top: -1rem solid rgba(0, 0, 0, .2);
         box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .2);
         display: none;
-        transition: transform 0.3s ease-in-out; /* Example transition */
+        transition: transform 0.3s ease-in-out;
+        /* Example transition */
         transform: translateY(-100%);
     }
-    
+
     .navbar.active {
         display: block;
         transform: translateY(0);
     }
-    
+
 
     .navbar a {
         display: block;
@@ -506,7 +527,7 @@ span {
     }
 
 
-    
+
 
 
 
