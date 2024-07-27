@@ -288,6 +288,140 @@ span {
     margin: 1rem 0 2rem;
 }
 
+
+/* Container styles */
+.skills-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    align-items: center;
+    grid-gap: 1rem;
+    padding: 1rem 80px;
+    text-align: center;
+    font-size: 1.2rem;
+    opacity: 0;
+    animation: fadeInContainer 1s forwards;
+
+}
+
+.skills-box {
+    padding: 1rem;
+    color: #fff;
+    cursor: pointer;
+    opacity: 0;
+    animation: fadeInSkill 1s forwards;
+    animation-delay: calc(var(--index) * 0.2s);
+}
+
+.skills-content h2 {
+    text-align: center;
+    line-height: 1.2;
+}
+
+/* Skill title styles */
+.skill-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+    position: relative;
+}
+
+/* Centered blue line with animation */
+.skill-title::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50px;
+    height: 4px;
+    border-radius: 2px;
+    background-color: #59B2F4;
+    opacity: 0;
+    animation: fadeInSlideIn 1s forwards;
+}
+
+/* Image container styles */
+.img {
+    width: 90px;
+    height: 90px;
+    position: relative;
+    border-radius: 45px;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    animation: fadeInScale 1s forwards;
+    animation-delay: calc(var(--index) * 0.2s);
+}
+
+.img::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background: rgba(100, 100, 100, 0.5);
+    border-radius: 45px 0 0 45px;
+}
+
+.skill-icon {
+    width: 50px;
+    z-index: 1;
+}
+
+/* Animations */
+@keyframes fadeInContainer {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInSkill {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInSlideIn {
+    0% {
+        opacity: 0;
+        transform: translateX(-50%) translateY(20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(-50%) translateY(0);
+    }
+}
+
+@keyframes fadeInScale {
+    0% {
+        opacity: 0;
+        transform: scale(0.5);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+
 .portfolio {
     background: var(--snd-bf-color);
 }
