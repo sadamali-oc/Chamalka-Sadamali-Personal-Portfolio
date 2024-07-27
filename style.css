@@ -26,6 +26,9 @@ html {
     overflow-x: hidden;
 }
 
+
+
+
 body {
     background: var(--bg-color);
     color: var(--text-color);
@@ -36,24 +39,39 @@ section {
     padding: 10rem 9% 2rem;
 }
 
+
+p {
+    text-align: justify;
+}
+
 /* Ensure the link has no unwanted styles */
 .link-icon {
-    display: inline-block; /* Make sure it displays inline with other elements */
-    text-decoration: none; /* Remove underline */
-    background: none; /* Remove background */
-    border: none; /* Remove border */
-    padding: 0; /* Remove padding */
-    margin: 0; /* Remove margin */
-  }
-  
-  /* Style the icon itself */
-  .link-icon i {
-    font-size: 1.5rem; /* Adjust size as needed */
-    color: #000; /* Set icon color */
-    background: none; /* Ensure no background for the icon */
-    border: none; /* Ensure no border for the icon */
-  }
-  
+    display: inline-block;
+    /* Make sure it displays inline with other elements */
+    text-decoration: none;
+    /* Remove underline */
+    background: none;
+    /* Remove background */
+    border: none;
+    /* Remove border */
+    padding: 0;
+    /* Remove padding */
+    margin: 0;
+    /* Remove margin */
+}
+
+/* Style the icon itself */
+.link-icon i {
+    font-size: 1.5rem;
+    /* Adjust size as needed */
+    color: #000;
+    /* Set icon color */
+    background: none;
+    /* Ensure no background for the icon */
+    border: none;
+    /* Ensure no border for the icon */
+}
+
 
 
 .header {
