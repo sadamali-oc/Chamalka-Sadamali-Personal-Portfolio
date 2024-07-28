@@ -289,7 +289,6 @@ span {
 }
 
 
-/* Container styles */
 .skills-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -301,7 +300,6 @@ span {
     font-size: 1.2rem;
     opacity: 0;
     animation: fadeInContainer 1s forwards;
-
 }
 
 .skills-box {
@@ -318,7 +316,6 @@ span {
     line-height: 1.2;
 }
 
-/* Skill title styles */
 .skill-title {
     display: flex;
     flex-direction: column;
@@ -328,7 +325,6 @@ span {
     position: relative;
 }
 
-/* Centered blue line with animation */
 .skill-title::after {
     content: '';
     position: absolute;
@@ -343,7 +339,6 @@ span {
     animation: fadeInSlideIn 1s forwards;
 }
 
-/* Image container styles */
 .img {
     width: 90px;
     height: 90px;
@@ -374,7 +369,6 @@ span {
     z-index: 1;
 }
 
-/* Animations */
 @keyframes fadeInContainer {
     0% {
         opacity: 0;
@@ -421,6 +415,36 @@ span {
     }
 }
 
+/* Media Queries */
+@media (max-width: 1200px) {
+    .skills-container {
+        padding: 1rem 40px;
+    }
+
+    .skills-box {
+        font-size: 1rem;
+    }
+
+    .img {
+        width: 70px;
+        height: 70px;
+    }
+}
+
+@media (max-width: 768px) {
+    .skills-container {
+        padding: 1rem 20px;
+    }
+
+    .skills-box {
+        font-size: 0.9rem;
+    }
+
+    .img {
+        width: 60px;
+        height: 60px;
+    }
+}
 
 .portfolio {
     background: var(--snd-bf-color);
@@ -619,6 +643,12 @@ span {
         padding: 10rem 3%;
     }
 
+
+
+
+    .skills {
+        padding: 7rem;
+    }
 
     .services {
         padding: 7rem;
